@@ -91,7 +91,7 @@ mobile copy/
 mob_bkp/
 mobile_bkp/
 pipelines/
-/scripts/
+scripts/
 docs_to_ingest/
 
 # Agents
