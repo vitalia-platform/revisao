@@ -27,9 +27,37 @@ rode o install.sh novamente.
 
 Para resolver problema de contexto, remova a pasta .agent/session com essa sequencia:
 
+```bash
 cd .agent/session && \
 git remote set-url origin git@github.com:vitalia-platform/vitalia-01-context.git && \
 git pull origin main --rebase && \
 cd ../..
+```
+
+```bash
 rm -rf .agent/session
 bash kit/scripts/install.sh
+```
+
+# -----------------------------------
+
+# Efetua push do arquivo de auditoria:
+
+git add .
+git commit -m "feat(review): complete lot 1 (physiology) and standardize audit log"
+git push origin main
+
+# -----------------------------------
+
+bash .agent/scripts/session-sync.sh "Concluído Lote 1 da revisão integrativa"
+
+a outra máquina, siga estes passos para garantir que eu tenha o contexto total:
+
+Atualize os arquivos:
+
+```bash
+git pull origin main
+bash .agent/scripts/session-sync.sh
+```
+
+# -----------------------------------
