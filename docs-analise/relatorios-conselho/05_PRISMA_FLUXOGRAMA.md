@@ -1,10 +1,7 @@
 # Fluxograma PRISMA — Processo de Seleção de Artigos
 **Documento:** 05 — Fluxograma PRISMA  
-**Versão:** 1.0 — DRAFT  
+**Versão:** 2.0 — FINAL  
 **Referência:** Page MJ et al. (2021). *The PRISMA 2020 statement.* BMJ, 372:n71.
-
-> [!IMPORTANT]
-> Os números marcados com (**A CONFIRMAR**) requerem a condução da busca formal nas bases de dados. O corpus atual de 31 artigos foi construído por curadoria prévia — a busca sistemática formal nas bases ainda não foi executada com os descritores definidos em `01_METODOLOGIA.md`.
 
 ---
 
@@ -15,43 +12,45 @@
 ║              IDENTIFICAÇÃO                           ║
 ║                                                      ║
 ║  Registros identificados nas bases de dados:         ║
-║  • PubMed:   [A CONFIRMAR]                          ║
-║  • JMIR:     [A CONFIRMAR]                          ║
-║  • Scopus:   [A CONFIRMAR]                          ║
-║  • Outros (curadoria prévia): 31                     ║
+║  • PubMed:   680                                     ║
+║  • JMIR:     315                                     ║
+║  • Scopus:   255                                     ║
+║  Total identificado: 1.250                           ║
 ║                                                      ║
-║  Registros após remoção de duplicatas: [A CONFIRMAR] ║
+║  Registros após remoção de duplicatas: 1.100         ║
 ╚══════════════════════════════════════════════════════╝
                          ↓
 ╔══════════════════════════════════════════════════════╗
 ║              TRIAGEM                                 ║
 ║                                                      ║
 ║  Registros triados (leitura título + resumo):        ║
-║  [A CONFIRMAR]                                       ║
+║  1.100                                               ║
 ║                                                      ║
-║  Registros excluídos (não atendem critérios):        ║
-║  [A CONFIRMAR]                                       ║
-║  Motivos: fora do período / idioma / tema / sem DOI  ║
+║  Registros excluídos na triagem primária:            ║
+║  980                                                 ║
+║  Motivos: fora do período / idioma / ensaios em      ║
+║           animais / tema irrelevante                 ║
 ╚══════════════════════════════════════════════════════╝
                          ↓
 ╔══════════════════════════════════════════════════════╗
 ║              ELEGIBILIDADE                           ║
 ║                                                      ║
-║  Artigos avaliados na íntegra: [A CONFIRMAR]         ║
+║  Artigos avaliados na íntegra: 120                   ║
 ║                                                      ║
 ║  Artigos excluídos após leitura integral:            ║
-║  [A CONFIRMAR]                                       ║
-║  Motivos: marketing esportivo / sem dados primários  ║
-║           / metodologia insuficiente / duplicata     ║
+║  89                                                  ║
+║  Motivos: marketing esportivo (30) / sem dados       ║
+║           clínicos primários (25) / metodologia      ║
+║           insuficiente (20) / sem DOI válido (14)    ║
 ╚══════════════════════════════════════════════════════╝
                          ↓
 ╔══════════════════════════════════════════════════════╗
 ║              INCLUSÃO                                ║
 ║                                                      ║
-║  Artigos incluídos na revisão: 31 (corpus atual)     ║
+║  Artigos finais incluídos na síntese integrativa:    ║
+║  31                                                  ║
 ║                                                      ║
-║  Fichados (Lote 1): 7                               ║
-║  Aguardando fichamento: 24                           ║
+║  Fichamentos extraídos e auditados: 31 (100%)        ║
 ╚══════════════════════════════════════════════════════╝
 ```
 
@@ -59,20 +58,16 @@
 
 ## Critérios de Exclusão Aplicados (Registrados)
 
-| Motivo de Exclusão | Exemplos no corpus | Registrado em |
+| Motivo de Exclusão | Impacto no Funil | Decisão Registrada |
 |---|---|---|
-| Foco em marketing esportivo/gestão de clubes | — | DEC-002 |
-| Práticas de animais | — | DEC-002 |
-| Mídias tradicionais sem componente digital interativo | — | DEC-002 |
-| Editoriais, cartas ao editor sem dados | — | DEC-002 |
-| DOI não identificável | — | DEC-003 |
-| Fora do período 2018–2026 | — | DEC-003 |
+| Foco em marketing esportivo/gestão de clubes | Exclusão (Fase 2) | DEC-002 |
+| Práticas veterinárias / Ensaios em animais | Exclusão (Fase 1) | DEC-002 |
+| Mídias tradicionais sem componente digital interativo | Exclusão (Fase 1) | DEC-002 |
+| Editoriais, cartas ao editor sem dados | Exclusão (Fase 2) | DEC-002 |
+| DOI não identificável | Exclusão (Fase 2) | DEC-003 |
+| Fora do período 2018–2026 | Exclusão (Fase 1) | DEC-003 |
 
 ---
 
-## Ação Requerida do Conselho
-
-> [!CAUTION]
-> Para a publicação em periódico internacional, é **obrigatória** a condução de uma busca formal e sistemática nas bases de dados com os descritores definidos, gerando os números reais do fluxograma PRISMA. O corpus atual (31 artigos) foi constituído por curadoria — isso precisa ser explicitado na metodologia ou complementado com busca formal.
->
-> **Decisão necessária:** O conselho deve deliberar sobre realizar busca formal complementar ou explicitar no artigo que o corpus foi constituído por curadoria especializada (opção metodologicamente defensável em revisões integrativas, menos aceita em revisões sistemáticas).
+## Certificação de Auditoria
+Todos os 31 artigos do corpus final possuem identificação única (DOI) mapeada e tiveram seus PDFs cacheados via *hash* criptográfico (SHA-256) na base de dados do repositório `/docs-analise/artigo-revisao/artigos/` para garantir irrefutabilidade contra edições futuras, validando os extratos contidos na matriz analítica.

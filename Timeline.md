@@ -63,7 +63,7 @@ bash .agent/scripts/session-sync.sh
 # -----------------------------------
 
 
-A sincronização do cntexto deu erro, veja:  bash .agent/scripts/session-sync.sh "Reestruturação acadêmica completa e refação do Lote 1"
+A sincronização do contexto deu erro, veja:  bash .agent/scripts/session-sync.sh "Reestruturação acadêmica completa e refação do Lote 1"
 
 🔄 [1/4] Puxando atualizações da Nuvem...
 error: cannot pull with rebase: You have unstaged changes.
