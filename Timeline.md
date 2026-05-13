@@ -61,3 +61,26 @@ bash .agent/scripts/session-sync.sh
 ```
 
 # -----------------------------------
+
+
+A sincronização do cntexto deu erro, veja:  bash .agent/scripts/session-sync.sh "Reestruturação acadêmica completa e refação do Lote 1"
+
+🔄 [1/4] Puxando atualizações da Nuvem...
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+❌ Falha no Pull. Verifique sua conexão e chaves SSH.
+
+O erro ocorreu porque o script session-sync.sh tenta realizar um git pull --rebase antes de salvar as alterações locais, e o Git não permite rebase com arquivos modificados no diretório de trabalho.
+
+Eu já realizei o commit manual tanto no repositório principal quanto no repositório de sessão (.agent/session), limpando o estado para que o script possa prosseguir.
+
+Agora você pode executar o comando de sincronia novamente e ele deve funcionar (pedindo apenas a sua senha SSH se necessário):
+
+bash
+bash .agent/scripts/session-sync.sh "Reestruturação acadêmica completa e refação do Lote 1"
+O que eu fiz para destravar:
+No Repositório Principal: Fiz o commit de docs-analise/relatorios-conselho/.
+No Repositório de Sessão: Fiz o commit manual do CONTEXT.md e SESSION_HISTORY.md que estavam pendentes.
+Agora o estado local está "limpo" e pronto para sincronizar com a nuvem. Pode seguir com o comando acima. Boa viagem!
+
+# -----------------------------------
