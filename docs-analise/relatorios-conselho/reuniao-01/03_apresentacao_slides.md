@@ -64,7 +64,7 @@ Nossa pesquisa encontrou três verdades irrefutáveis sobre a saúde digital hoj
 # 5. Próximos Passos
 - O corpus teórico (31 papers) está validado.
 - Os modelos conceituais para os motores biomédicos estão criados.
-- **Próxima Fase:** Codificação dos primeiros testes de interação entre Kim e Keytel.
+- **Próxima Fase:** Recepção do feedback estratégico do Conselho e validação final da arquitetura teórica antes da codificação.
 
 ---
 

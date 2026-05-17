@@ -34,7 +34,7 @@
 
 ## 5. Fechamento e Próximos Passos
 - Concluímos que a Vitalia será **Híbrida:** Uma fusão de telemetria implacável e um design comportamental empático e tolerante a falhas técnicas.
-- Solicita-se a aprovação formal desta matriz acadêmica para o início dos testes das lógicas em código no próximo ciclo.
+- Neste momento, aguardamos o feedback crítico do Conselho Consultivo. Solicita-se a revisão e aprovação formal desta matriz acadêmica para garantir que nossos alicerces científicos estejam irretocáveis antes de iniciarmos qualquer linha de código.
 
 ---
 *(Fim do Script)*
